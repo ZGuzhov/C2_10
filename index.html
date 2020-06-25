@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <title>C2.10</title>
+
+
+  </head>
+  <body>
+    <section class="voting text-center container mt-5 col-5">
+      <H1>ГОЛОСОВАНИЕ</H1>
+      <H2 class="vote-text">Проголосуйте для просмотра результатов голосования</H2>
+      <br>
+      <input class="btn btn-primary b-cats" type="button" value="Кошки">
+      <input class="btn btn-primary b-parrots" type="button" value="Попугаи">
+      <input class="btn btn-primary b-dogs" type="button" value="Собаки">
+    </section>
+
+    <section class="vote-stats" style="display: none;">
+      <section class="container mt-5 col-5 justify-content-center">
+        <div class="progress">
+            <div class="progress-bar cats" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </section>
+
+      <section class="container mt-5 col-5 justify-content-center">
+        <div class="progress">
+            <div class="progress-bar parrots bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </section>
+
+      <section class="container mt-5 col-5 justify-content-center">
+        <div class="progress">
+            <div class="progress-bar dogs bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </section>
+    </section>
+
+    <script src="./src/voting.js"></script>
+  </body>
+</html>
